@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <title>Cadastro de Clientes</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+  <h2>Dados do cadastro</h2>
+
+  <table>
+
+    <tr>
+      <td><label for="nome">Nome:</label></td>
+      <td><input type="text" name="nome" id="nome" placeholder="Nome do Cliente"></td>
+    </tr>
+
+    <tr>
+      <td><label for="cpf">CPF:</label></td>
+      <td><input type="text" name="cpf" id="cpf" placeholder="CPF do Cliente"></td>
+    </tr>
+
+    <tr>
+      <td><label for="telefone">Telefone:</label></td>
+      <td><input type="text" name="telefone" id="telefone" placeholder="Telefone"></td>
+    </tr>
+
+    <tr>
+      <td><label for="endereco">Endereço:</label></td>
+      <td><input type="text" name="endereco" id="endereco" placeholder="Rua, número, complemento"></td>
+    </tr>
+
+    <tr>
+      <td><label for="cidade">Cidade: </label></td>
+      <td><select name="cidade" id="cidade">
+        <option disabled selected value="0">Selecione:</option>
+        <option value="1">João Monlevade</option>
+        <option value="2">Belo Horizonte</option>
+        <option value="3">São Paulo</option>
+        <option value="4">Rio de Janeiro</option>
+        <option value="5">Betim</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="data">Data de nascimento: </label></td>
+      <td><input type="date" name="data" id="data"></td>
+    </tr>
+
+    <tr>
+      <td><label for="mercado">Gênero:</label></td>
+      <td><input type="radio" id="feminino" name="genero" value="F">
+          <label for="feminino">Feminino</label>
+          <input type="radio" id="masculino" name="genero" value="M">
+          <label for="masculino">Masculino</label>
+      </td>
+    </tr>
+
+
+  </table>
+
+  <input type="submit" name="cadastro" value="Cadastrar">
+
+   <input type="reset" value="Limpar">
+
+  <h3><a href="home.html">Voltar</a></h3>
+
+</body>
