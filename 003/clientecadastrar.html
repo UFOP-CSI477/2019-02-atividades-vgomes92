@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <title>Cadastro de Clientes</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+  <h2>Dados do cadastro</h2>
+
+  <form name="dados">
+      <div id="grupo1" class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome do Cliente" class="form-control">
+      </div>
+
+      <div id="grupo2" class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="CPF do Cliente" class="form-control">
+      </div>
+
+      <div id="grupo3" class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone" id="telefone" placeholder="Telefone" class="form-control">
+      </div>
+
+      <div id="grupo4" class="form-group">
+        <label for="endereco">Endereço:</label></td>
+        <input type="text" name="endereco" id="endereco" placeholder="Rua, número, complemento" class="form-control">
+
+        <label for="cidade">Cidade: </label>
+          <select name="cidade" id="cidade" class="form-control">
+            <option disabled selected value="0">Selecione:</option>
+            <option value="1">João Monlevade</option>
+            <option value="2">Belo Horizonte</option>
+            <option value="3">São Paulo</option>
+            <option value="4">Rio de Janeiro</option>
+            <option value="5">Betim</option>
+          </select>
+      </div>
+
+
+
+      <div id="grupo5" class="form-group">
+        <label for="data">Data de nascimento: </label>
+        <input type="date" name="data" id="data" class="form-control">
+      </div>
+
+      <div id="grupo6" class="form-group">
+        <label for="genero">Gênero:</label>
+          <input type="radio" id="feminino" name="genero" value="F">
+          <label for="feminino">Feminino</label>
+          <input type="radio" id="masculino" name="genero" value="M">
+          <label for="masculino">Masculino</label>
+      </div>
+
+
+
+      <input type="button" value="Cadastrar" onclick="cadastrar()" class="btn btn-primary">
+
+      <input type="reset" name="" value="Limpar" class="btn btn-warning">
+
+      <div id="grupo7" class="form-link"
+        <h3><a href="home.html">Voltar</a></h3>
+      </div>
+
+</form>
+
+</body>

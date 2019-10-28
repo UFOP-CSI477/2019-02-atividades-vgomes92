@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <title>Cadastro de Clientes</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="clientecadastrar.js"></script>
+</head>
+
+<body>
+  <h2>Dados do cadastro</h2>
+
+  <form name="dados">
+      <div id="grupo1" class="form-group">
+        <label for="nome" id="labelnome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome do Cliente" class="form-control">
+
+        <div id="alertanome" class="alert alert-danger" style="display: none">
+          <span>Preencha o campo!</span>
+        </div>
+      </div>
+
+      <div id="grupo2" class="form-group">
+        <label for="cpf" id="labelcpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="CPF do Cliente" class="form-control">
+
+        <div id="alerta1" class="alert alert-danger" style="display: none">
+          <span>Digite o CPF corretamente!</span>
+        </div>
+
+      </div>
+
+      <div id="grupo3" class="form-group">
+        <label for="telefone" id="labeltelefone">Telefone:</label>
+        <input type="text" name="telefone" id="telefone" placeholder="Telefone" class="form-control">
+
+        <div id="alerta2" class="alert alert-danger" style="display: none">
+          <span>Digite o Telefone corretamente!</span>
+        </div>
+      </div>
+
+      <div id="grupo4" class="form-group">
+        <label for="endereco" id="labelendereco">Endereço:</label></td>
+        <input type="text" name="endereco" id="endereco" placeholder="Rua, número, complemento" class="form-control">
+
+        <div id="alertaendereco" class="alert alert-danger" style="display: none">
+          <span>Preencha o campo!</span>
+        </div>
+
+        <label for="cidade" id="labelcidade">Cidade: </label>
+          <select name="cidade" id="cidade" class="form-control">
+            <option disabled selected value="0">Selecione:</option>
+            <option value="1">João Monlevade</option>
+            <option value="2">Belo Horizonte</option>
+            <option value="3">São Paulo</option>
+            <option value="4">Rio de Janeiro</option>
+            <option value="5">Betim</option>
+          </select>
+
+          <div id="alertacidade" class="alert alert-danger" style="display: none">
+            <span>Preencha o campo!</span>
+          </div>
+      </div>
+
+
+
+      <div id="grupo5" class="form-group">
+        <label for="data" id="labeldata">Data de nascimento: </label>
+        <input type="date" name="data" id="data" class="form-control">
+
+        <div id="alertadata" class="alert alert-danger" style="display: none">
+          <span>Preencha o campo!</span>
+        </div>
+      </div>
+
+      <div id="grupo6" class="form-group">
+        <label for="genero" id="labelgenero">Gênero:</label>
+          <input type="radio" id="feminino" name="genero" value="F" class="radio-group">
+          <label for="feminino">Feminino</label>
+          <input type="radio" id="masculino" name="genero" value="M" class="radio-group">
+          <label for="masculino">Masculino</label>
+
+          <div id="alertagenero" class="alert alert-danger" style="display: none">
+            <span>Preencha o campo!</span>
+          </div>
+      </div>
+
+
+
+      <input type="button" value="Cadastrar" onclick="cadastrar()" class="btn btn-primary">
+
+      <input type="reset" name="" value="Limpar" class="btn btn-warning">
+
+      <div id="grupo7" class="form-link"
+        <h3><a href="home.html">Voltar</a></h3>
+      </div>
+
+</form>
+
+</body>

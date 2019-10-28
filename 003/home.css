@@ -1,0 +1,25 @@
+table {
+  width: 50%;
+}
+
+table, th, td {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px;
+  text-align: center;
+}
+
+th {
+  background-color: #d1d1d1;
+  font-size: 16pt;
+}
+td{
+  font-size: 14pt;
+}
+
+tbody tr:hover {
+  background-color: #d6f2a7;
+}
