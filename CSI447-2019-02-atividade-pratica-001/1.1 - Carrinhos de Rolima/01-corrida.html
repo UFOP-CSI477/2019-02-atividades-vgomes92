@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="br" dir="ltr">
+
+	<meta charset="utf-8">
+	<title>Competição Rolimã</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="home.css">
+
+  <script src="home.js"></script>
+
+</head>
+
+<body>
+  <br>
+  <center><h2>Cometição de Carrinhos de Rolimã!</h2></center>
+  <form name="dados">
+
+
+          <h5>Adicionar Novo Competidor:</h5>
+          <div id="grupo1" class="form-group">
+            <label for="nomeComp" id="labelnome">Nome do Competidor:</label>
+            <input type="text" name="nomeComp" id="nomeComp" placeholder="Nome do Competidor" class="form-control">
+
+            <div id="alertanome" class="alert alert-danger" style="display: none">
+              <span>Preencha o campo!</span>
+            </div>
+          </div>
+
+          <div id="grupo1" class="form-group">
+            <label for="tempoComp" id="labeltempo">Tempo do Competidor:</label>
+            <input type="text" name="tempoComp" id="tempoComp" placeholder="Tempo do Competidor" class="form-control">
+
+            <div id="alertatempo" class="alert alert-danger" style="display: none">
+              <span>Preencha o campo, apenas números!</span>
+            </div>
+          </div>
+
+          <center>
+            <input type="button" value="Criar" onclick="novoCampeonato()" class="btn btn-primary">
+            <input type="reset" name="" value="Limpar" class="btn btn-warning">
+          </center>
+
+          <br>
+					<h5>Competidores:</h5>
+          <div id="tabela" class="table">
+  					<table class="table" id="tabela">
+  						<thead>
+  							<tr>
+  								<th>Posição Largada</th>
+  								<th>Nome Competidor</th>
+  								<th>Tempo em Segundos</th>
+  							</tr>
+  						</thead>
+  						<tbody id="TabelaDados">
+  						</tbody>
+  					</table>
+
+  				</div>
+
+          <br>
+
+          <center>
+            <input type="button" value="Gerar Resultado" onclick="resultado()" class="btn btn-primary">
+          </center>
+
+          <br>
+          <h5>Resultado Final:</h5>
+          <div id="tabela2" class="table">
+  					<table class="table" id="tabela2">
+  						<thead>
+  							<tr>
+  								<th>Posição Final</th>
+                  <th>Posição Largada</th>
+  								<th>Nome Competidor</th>
+  								<th>Tempo em Segundos</th>
+                  <th>Resultado</th>
+  							</tr>
+  						</thead>
+  						<tbody id="TabelaResultado">
+  						</tbody>
+  					</table>
+
+  				</div>
+
+
+
+  </form>
+
+</body>
+
+</html>

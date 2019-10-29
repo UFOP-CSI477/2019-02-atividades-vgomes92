@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="br" dir="ltr">
+
+	<meta charset="utf-8">
+	<title>Cálculo do IMC</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+
+  <script src="home.js"></script>
+
+</head>
+
+<body>
+  <br>
+  <center><h2>Cálculo do IMC!</h2>
+  <form name="dados">
+
+    <table>
+      <tr>
+        <td colspan="2">
+          <div id="grupo1" class="form-group">
+            <label for="peso" id="labelpeso">Informe o Peso: (em KG)</label>
+            <input type="number" step="0.01" name="peso" id="peso" placeholder="Digite seu peso em KG" class="form-control">
+
+            <div id="alertapeso" class="alert alert-danger" style="display: none">
+              <span>Preencha o campo corretamente!</span>
+            </div>
+          </div>
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+          <div id="grupo1" class="form-group">
+            <label for="altura" id="labelaltura">Informe a Altura: (em Metros)</label>
+            <input type="number" step="0.01" name="altura" id="altura" placeholder="Digite sua Altura em Metros (Ex: 1,74)" class="form-control">
+
+            <div id="alertaaltura" class="alert alert-danger" style="display: none">
+              <span>Preencha o campo, apenas números!</span>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td colspan="2">
+          <div id="resultado" class="form-group">
+            <label for="resultado">Resultado IMC:</label>
+            <input type="text" name="resultado" id="resultado" value="" class="form-control" disabled>
+          </div>
+        </td>
+      </tr>
+        <tr>
+          <td colspan="2">
+            <center><label for="pesoideal">Peso Ideal pela sua Altura: (em KG)</label></center>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><center><label for="pesoideal">De: </label></center></td>
+          <td><center><label for="pesoideal">Até: </label></center></td>
+        </tr>
+
+        <tr>
+          <td>
+          <div id="inferior" class="form-group">
+            <input type="text" name="inferior" id="inferior" value="" class="form-control" disabled>
+          </div></td>
+          <td>
+          <div id="superior" class="form-group">
+            <input type="text" name="superior" id="superior" value="" class="form-control" disabled>
+          </div></td>
+
+        <tr>
+      </table>
+
+
+    <br>
+    <input type="button" value="Calcular" onclick="calcular()" class="btn btn-primary">
+    <input type="reset" name="" value="Limpar" class="btn btn-warning">
+
+  </form>
+  </center>
+
+</body>
+
+</html>
